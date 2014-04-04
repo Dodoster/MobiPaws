@@ -4,19 +4,19 @@
 <title>MobiPaws</title>
 </head>
 <body>
+Your MobiPaws Entry
 <form id="newPetEntry" onSubmit="return validateForm()" method="post">
-<input type="text" id="nameOfPet" /> <br/>
-<input type="text" id="typeOfAnimal" /> <br/>
-<input type="text" id="gender" /> <br/>
-<input type="text" id="nameOfOwner" /> <br/>
-<input type="text" id="addressOfTheAnimal" /> <br/>
-<input type="text" id="phoneNumberOfOwner" /> <br/>
-<input type="text" id="typeOfService" /> <br/>
-<input type="text" id="startDate" /> <br/>
-<input type="text" id="endDate" /> <br/>
+Name of pet* <input type="text" id="nameOfPet" /> <br/>
+Type of animal* <input type="text" id="typeOfAnimal" /> <br/>
+Gender <input type="text" id="gender" /> <br/>
+Name of Owner* <input type="text" id="nameOfOwner" /> <br/>
+Address* <input type="text" id="addressOfTheAnimal" /> <br/>
+Phone* <input type="text" id="phoneNumberOfOwner" /> <br/>
+Type of Service <input type="text" id="typeOfService" /> <br/>
+Start Date* <input type="date" id="startDate" /> <br/>
+End Date <input type="date" id="endDate" /> <br/>
 <input type="submit" id="submitEntry" text="Submit Entry">
-<button id="clear">Clear</button>
-<div id="result"></div>
+<input type="reset" value="Clear">
 </form>
 
 <script src="js/zepto.min.js"></script>
@@ -26,43 +26,37 @@ function validateForm()
 var x=document.forms["newPetEntry"]["nameOfPet"].value;
 if (x==null || x=="")
   {
-  alert("First name must be filled out");
+  alert("Name Of Pet must be filled out");
   return false;
   }
   x=document.forms["newPetEntry"]["typeOfAnimal"].value;
 if (x==null || x=="")
   {
-  alert("First name must be filled out");
+  alert("Type Of Animal must be filled out");
   return false;
   }
   x=document.forms["newPetEntry"]["nameOfOwner"].value;
 if (x==null || x=="")
   {
-  alert("First name must be filled out");
+  alert("Name Of Owner must be filled out");
   return false;
   }
   x=document.forms["newPetEntry"]["addressOfTheAnimal"].value;
 if (x==null || x=="")
   {
-  alert("First name must be filled out");
+  alert("Address Of The Animal must be filled out");
   return false;
   }
   x=document.forms["newPetEntry"]["phoneNumberOfOwner"].value;
 if (x==null || x=="")
   {
-  alert("First name must be filled out");
-  return false;
-  }
-  x=document.forms["newPetEntry"]["typeOfService"].value;
-if (x==null || x=="")
-  {
-  alert("First name must be filled out");
+  alert("Phone Number Of Owner must be filled out");
   return false;
   }
   x=document.forms["newPetEntry"]["startDate"].value;
 if (x==null || x=="")
   {
-  alert("First name must be filled out");
+  alert("Start Date must be filled out");
   return false;
   }
 }
