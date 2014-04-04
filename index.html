@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<title>MobiPaws</title>
+</head>
+<body>
+<form id="newPetEntry" onSubmit="return validateForm()" method="post">
+<input type="text" id="nameOfPet" /> <br/>
+<input type="text" id="typeOfAnimal" /> <br/>
+<input type="text" id="gender" /> <br/>
+<input type="text" id="nameOfOwner" /> <br/>
+<input type="text" id="addressOfTheAnimal" /> <br/>
+<input type="text" id="phoneNumberOfOwner" /> <br/>
+<input type="text" id="typeOfService" /> <br/>
+<input type="text" id="startDate" /> <br/>
+<input type="text" id="endDate" /> <br/>
+<input type="submit" id="submitEntry" text="Submit Entry">
+<button id="clear">Clear</button>
+<div id="result"></div>
+</form>
+
+<script src="js/zepto.min.js"></script>
+<script>
+function validateForm()
+{
+var x=document.forms["newPetEntry"]["nameOfPet"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+  x=document.forms["newPetEntry"]["typeOfAnimal"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+  x=document.forms["newPetEntry"]["nameOfOwner"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+  x=document.forms["newPetEntry"]["addressOfTheAnimal"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+  x=document.forms["newPetEntry"]["phoneNumberOfOwner"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+  x=document.forms["newPetEntry"]["typeOfService"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+  x=document.forms["newPetEntry"]["startDate"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+}
+</script>
+</body>
+</html>
